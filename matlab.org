@@ -1,0 +1,26 @@
+* NOTE FOR MATLAB USAGE
+** INSTATLLATION
+** SPECIFIC PROBLEM
+*** PDE
+**** PDEPE
+***** CLASSIFICATION
+\begin{equation}
+c(x,t,u,\frac{\partial u}{\partial x})\frac{\partial u}{\partial
+t}=x^{-m}\frac{\partial u}{\partial x}(x^mf(x,t,u,\frac{\partial
+u}{\partial x}))+s(x,t,u,\frac{\partial u}{\partial x})
+\end{equation}
+The pde hold for t_o \ll t \ll t_f and a\ll x\ll b, m can be 0,1,2 corresponding to slab,cylindral, spherical symmetry
+respectively. if m>0 then a>0 must also hold.
+***** SUITABLE REGION
+The MATLAB PDE solver, pdepe, solves initial-boundary value problems for systems of parabolic and elliptic PDEs in the one space variable x and time t. There must be at least one parabolic equation in the system.
+***** DEPENDS
+The pdepe solver converts the PDEs to ODEs using a second-order
+accurate spatial discretization based on a fixed set of user-specified
+nodes.Discretization method:[[http://www.mathworks.com/help/matlab/math/selected-bibliography-for-differential-equations.html#f1-697835][here]]. The time integration is done with
+[[http://www.mathworks.com/help/matlab/ref/ode15s.html][ode15s]]
+***** SOLUTIONS
+[[http://www.mathworks.com/help/matlab/math/partial-differential-equations.html][MATLAB PDEPE GUIDE & EXAMPLE]]
+
+
+
+
